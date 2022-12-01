@@ -11,7 +11,7 @@ def part_one(path):
                 if count > most:
                     most = count
                 count = 0
-        print('The answer to part 1 is: ' + str(most))
+        print("1: " + str(most))
             
             
 def part_two(path):
@@ -33,10 +33,9 @@ def part_two(path):
         for top in top_3:
             final+=top
         
-        print('The answer to part 2 is: ' + str(final))
-            
+        print("2: " + str(final))
+
+part_one("1.txt")
+part_two("1.txt")
             
                 
-                
-part_one('1.txt')
-part_two('1.txt')
