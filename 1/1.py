@@ -1,41 +1,37 @@
 
-def part_one(path):
-    most = 0
-    count = 0
-    with open (path, 'r') as f:
-        for line in f:
-            if len(line.strip()) != 0:
-                num = int(line)
-                count+=num
-            else:
-                if count > most:
-                    most = count
-                count = 0
-        print("1: " + str(most))
-            
-            
-def part_two(path):
-    count = 0
-    top_3 = [0, 0, 0]
-    final = 0
-    with open (path, 'r') as f:
-        for line in f:
-            if len(line.strip()) != 0:
-                num = int(line)
-                count+=num
-            else:
-                top_3.sort()
-                for i in range(len(top_3)):
-                    if count > top_3[i]:
-                        top_3[i] = count
-                        break
-                count = 0
-        for top in top_3:
-            final+=top
-        
-        print("2: " + str(final))
+# Open txt file and turn it into an array
 
-part_one("1.txt")
-part_two("1.txt")
+def get_input(path):
+    with open(path, 'r') as f:
+        data = []
+        for line in f:
+            data.append(line.strip())
+    return data
+
+# add value blocks and adds them to an array
+# and sorts by largest value
+
+def make_sorted_list(file):
+    count = 0
+    arr = []
+    for line in file:
+        if line != "":
+            num = int(line)
+            count+=num
+        else:
+            arr.append(count)
+            count = 0   
+    arr.sort(reverse=True)
+    return(arr)           
+
+# read file and run make_sorted_list to builed a sorted array
+
+AoC_input = get_input('1.txt')
+array = make_sorted_list(AoC_input)
+
+# print results
+
+print(array[0])
+print(array[0]+array[1]+array[2])
             
                 
