@@ -6,5 +6,5 @@ def get_input(path):
     return data
 
 
-input = get_input('2.txt')
+input = get_input(FILE_NAME)
 
