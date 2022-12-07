@@ -40,8 +40,3 @@ def part_two(file):
 AoC_input = get_input('6.txt')
 part_one(AoC_input)
 part_two(AoC_input)
-
-# v
-# n
-# c
-# z
