@@ -15,6 +15,5 @@ Super easy, had fun doing it, pt 2 required 2-3 number to change in my code and 
 ### day 7
 shit got real, fast
 Didnt know how to approach it but '0xdf' on youtube had a video and I used it to HEAVILY influence how I built the directories and how I did pt 1, pt 2 I did alone though.
-video I used as "inspiration"
 https://www.youtube.com/watch?v=j0NkerhwZxQ
 ### day 8
