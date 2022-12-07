@@ -6,7 +6,6 @@ def get_input(path):
 def part_one(file):
     front = 0
     back = 4
-    #index where num is found is always front+3
     char_count = len(file)
     for i in range(0, char_count):
         if i<= char_count-4:
@@ -23,7 +22,6 @@ def part_one(file):
 def part_two(file):
     front = 0
     back = 14
-    #index where num is found is always front+3
     char_count = len(file)
     for i in range(0, char_count):
         if i<= char_count-4:
